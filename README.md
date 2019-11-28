@@ -19,7 +19,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from "@material-ui/core/styles";
 import {
 	withFormValidation,
-	 InputWithValid,
+	InputWithValid,
 } from 'react-mui-simple-form-validation';
 
 
@@ -67,7 +67,7 @@ const LoginFormWithValid = withFormValidation(LoginFormFields);
 
 export default LoginFormWithValid;
 ```
-Then create **LoginForm.component.js **
+Then create **LoginForm.component.js**
 
 ```javascript
 import LoginFormWithValid from './path/to/LoginFormWithValid';
@@ -110,7 +110,7 @@ const LoginForm = () => {
 }
 export default LoginForm;
 ```
-That's all 		:tw-1f60e:
+That's all!
 
 You can also use **MultipleChipSelectWithValid** component 
 
@@ -149,7 +149,7 @@ Component has a structure :
 		<Grid item> <!--btnGridItem -->
 			<Button /> <!--submitBtn -->
 		</Grid>
-		 {children}  <!--here you can add extra buttons -->
+		{children}  <!--here you can add extra buttons -->
 	</Grid>
 </form>
 
