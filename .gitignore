@@ -1,0 +1,13 @@
+node_modules
+*.log
+.DS_Store
+dist
+lib
+coverage
+packageexample.json
+yarn.lock
+.eslintignore
+.eslint
+.npmignore
+
+

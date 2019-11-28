@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "globals": {
+    "document": true
+  },
+  "rules": {
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/state-in-constructor": [2, "never"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/jsx-props-no-spreading": [0],
+    "react/forbid-prop-types" :[0],
+    "react/require-default-props":[0],
+    "import/extensions": [2, { "js": "ignorePackages"}],
+    "no-shadow":[0]
+  },
+  "plugins": [
+    "react"
+  ]
+}

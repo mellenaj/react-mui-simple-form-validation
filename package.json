@@ -1,0 +1,69 @@
+{
+  "name": "react-mui-simple-form-validation",
+  "version": "0.0.10",
+  "description": "Very simple form validation with material-ui",
+  "main": "dist/react-mui-simple-form-validation.min.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prepublish": "npm run clean && npm run build && npm run build:umd && npm run build:umd:min",
+    "prepare": "npm run clean && npm run build",
+    "build": "npm run build:umd && npm run build:umd:min",
+    "build:umd": "NODE_ENV=development npx webpack",
+    "build:umd:min": "NODE_ENV=production npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mellenaj/react-mui-simple-form-validation.git"
+  },
+  "keywords": [
+    "react",
+    "material-ui",
+    "simple",
+    "validation",
+    "mui-form-validation",
+    "material-ui-form-validation",
+    "validation-form",
+    "react-validation-form",
+    "react-validation-form-mui",
+    "react-mui-simple-form-validation"
+  ],
+  "author": "mellenaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mellenaj/react-mui-simple-form-validation/issues"
+  },
+  "homepage": "https://github.com/mellenaj/react-mui-simple-form-validation",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.7.4",
+    "@material-ui/core": "^4.7.0",
+    "@material-ui/icons": "^4.5.1",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^5.2.1",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-react-app": "^5.0.1",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "react": "^16.12.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "prop-types": ">=15.7.2"
+  },
+  "peerDependencies": {
+    "@material-ui/core": ">=4.4.0",
+    "@material-ui/icons": "^4.5.1",
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+}
